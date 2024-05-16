@@ -1,0 +1,212 @@
+body {
+  background: rgb(46, 63, 87);
+  background: linear-gradient(
+    90deg,
+    rgb(63, 86, 119) 0%,
+    rgba(33, 44, 61, 1) 42%,
+    rgb(15, 21, 29) 100%
+  );
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* sidebar */
+
+.navbar.navBar1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 230px;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  background-color: black;
+  z-index: 10000;
+}
+
+.navbar a {
+  color: rgb(145, 145, 145) !important;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: white !important;
+}
+
+.navbar-brand {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.navbarButton {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.navbarButton a {
+  color: rgb(240, 238, 238);
+  text-decoration: none;
+}
+
+.signupButton {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.signupButton:hover {
+  color: white;
+  background-color: rgb(60, 211, 60);
+  border: 1px solid rgb(60, 211, 60);
+}
+
+.loginButton {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.loginButton:hover {
+  color: black;
+  background-color: rgb(60, 211, 60);
+}
+
+@media screen and (max-width: 870px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+/* player */
+.playerBg {
+  height: 5.5rem;
+  background-color: #282828;
+}
+
+.playerControls div {
+  justify-content: space-between;
+}
+
+.playerControls a img {
+  cursor: pointer;
+  width: 18px;
+  margin-top: 1rem;
+}
+
+.progress {
+  color: white;
+  background-color: #1db954;
+  height: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+  .playerControls div:first-of-type {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (max-width: 991px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .albumImage {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+/* homepage and various  */
+
+.mainLinks {
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+.mainLinks a {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 0.3;
+}
+
+.mainLinks a:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.imgLinks a p,
+.mainPage p {
+  padding-top: 8px;
+  font-size: 12px;
+  color: white;
+  font-weight: 700;
+}
+
+#metal,
+#rap,
+#cult,
+#searchResults {
+  color: white;
+  font-weight: 700;
+  padding-top: 50px;
+  margin-bottom: 2rem;
+}
+
+#cult {
+  margin-bottom: 6rem !important;
+}
+
+.hover {
+  cursor: pointer;
+}
+.customStart {
+  left: 15%;
+}
+.card {
+  max-width: 256px;
+  height: 400px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 6px rgba(8, 8, 8, 0.524);
+  transition: 0.4s;
+}
+
+.card:hover {
+  border: 3px solid #1db954;
+  box-shadow: 0 4px 10px rgba(175, 173, 173, 0.742);
+  transform: scale(1.1);
+}
+
+.results-page-container {
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.results-songs-container {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.hover:hover {
+  border: 2px solid #1abe54 !important;
+}
