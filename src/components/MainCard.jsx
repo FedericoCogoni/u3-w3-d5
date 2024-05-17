@@ -20,10 +20,6 @@ const MainCard = ({ songInfo }) => {
     setIsLiked(!isLiked)
   }
 
-  const handlePlay = () => {
-    dispatch(playSong(songInfo))
-  }
-
   return (
     <div className="col mb-4">
       <div
@@ -31,7 +27,7 @@ const MainCard = ({ songInfo }) => {
         style={{ maxWidth: "256px", height: "380px" }}
       >
         <div onClick={() => dispatch(playSong(songInfo))}>
-          <img className="img-fluid" src={songInfo.album.cover_medium} alt="Track" />
+          <img className="img-fluid" src={songInfo.album.cover_medium} alt="Main Track" />
         </div>
         <div
           className="card-body d-flex justify-content-between"

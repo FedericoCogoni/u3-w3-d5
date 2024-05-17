@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./assets/style.css"
-import "./App.css"
+import "./css/style.css"
 import Player from "./components/Player"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import SideBar from "./components/SideBar"

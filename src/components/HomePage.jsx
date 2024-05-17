@@ -45,10 +45,10 @@ const HomePage = () => {
             break
         }
       } else {
-        throw new Error("Error in fetching songs")
+        throw new Error("Error")
       }
     } catch (err) {
-      console.log("error", err)
+      console.log("Error", err)
     }
   }
 
